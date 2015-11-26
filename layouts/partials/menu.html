@@ -1,0 +1,13 @@
+						{{ $baseurl := .Site.BaseUrl }}
+						<ul class="nav container-inner group" id="menu-topbar-menu">
+							<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home" >
+								<a href="{{ $baseurl }}">Home</a>
+							</li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children "><a href="#">Java</a>
+								<ul class="sub-menu" style="display: none;">
+									<li class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="{{ $baseurl }}java-base">Java基础</a></li>
+									<li class="menu-item menu-item-type-taxonomy menu-item-object-category "><a href="{{ $baseurl }}java-plugs">常用组件</a></li>
+									<li class="menu-item menu-item-type-taxonomy menu-item-object-category" ><a href="{{ $baseurl }}java-open">开源学习</a></li>
+								</ul>
+							</li>
+						</ul>	

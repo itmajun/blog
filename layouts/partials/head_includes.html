@@ -1,0 +1,17 @@
+		{{ $baseurl := .Site.BaseUrl }}
+		<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+
+
+		<link rel="shortcut icon" href="" />
+		<link rel='stylesheet' id='style-css'  href='{{ $baseurl }}css/style.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='responsive-css'  href='{{ $baseurl }}css/responsive.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='font-awesome-css'  href='{{ $baseurl }}css/font-awesome.min.css' type='text/css' media='all' />
+		<script type='text/javascript' src='{{ $baseurl }}js/jquery/jquery.js'></script>
+		<script type='text/javascript' src='{{ $baseurl }}js/jquery/jquery-migrate.min.js'></script>
+		<script type="text/javascript" src="{{ $baseurl }}js/jquery.flexslider.min.js"></script>
+		<script type='text/javascript' src='{{ $baseurl }}js/scripts.js'></script>
+
+		<!--[if lt IE 9]>
+		<script src="{{ $baseurl }}js/ie/html5.js"></script>
+		<script src="{{ $baseurl }}js/ie/selectivizr.js"></script>
+		<![endif]-->

@@ -1,0 +1,36 @@
+							{{ $baseurl := .Site.BaseUrl }}
+							<section class="content">
+								<!--内容导航头-->
+								<div class="page-title pad group">
+									<ul class="meta-single group">
+										<li class="category">
+											<a href="{{ $baseurl }}">Home.
+											</a>
+										</li>
+
+									</ul>
+								</div>
+								<!--内容区图片轮播-->
+								<div class="pad group">
+									<!--正文区-->
+									<div class="post-list group">
+										<!--一行两个数据-->
+										<div class="post-row">
+											{{ range (.Paginator 10).Pages }}
+											  {{ .Render "summary"}}
+											{{ end }}
+										</div>
+									</div>
+
+									
+										
+											{{ template "_internal/pagination.html" . }}
+									
+								</div>	
+									<style type="text/css">
+									.pagination li{width:20px;float:left}
+
+
+										</style>		
+							
+							</section>

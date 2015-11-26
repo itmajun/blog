@@ -1,0 +1,33 @@
+							{{ $baseurl := .Site.BaseUrl }}
+							<section class="content">
+								<!--内容导航头-->
+								<div class="page-title pad group">
+									<ul class="meta-single group">
+										<li class="category">
+											<a href="{{ $baseurl }}{{.Section }}">{{.Section }}.
+											</a>
+										</li>
+
+									</ul>
+										
+								</div>
+								<div class="pad group">
+									<div class="post-inner group">
+										
+										<h1 class="post-title">{{.Title}}</h1>
+										<p class="post-byline">
+											by
+											<a href="javascript:void(0)">itmajun</a> {{ .Date.Format "Mon, Jan 2, 2006" }}
+										</p>
+										<div class="entry share">
+											<div class="entry-inner">
+												{{ .Content }}
+											</div>
+											
+										</div>
+									</div>
+
+								</div>
+								
+							
+							</section>

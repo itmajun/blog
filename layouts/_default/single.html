@@ -1,0 +1,47 @@
+	{{ $baseurl := .Site.BaseUrl }}
+<!DOCTYPE html> 
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8">
+	 	{{ partial "meta.html" . }}
+		
+		<title>itmajun | 个人博客</title>
+	 	{{ partial "head_includes.html" . }}
+		
+	</head>
+	<body class="home blog col-3cm full-width topbar-enabled mobile-sidebar-hide-s2 gecko s1-collapse s2-collapse">
+		<div id="wrapper">
+			<header id="header">
+				<!--顶部导航 -->
+				<nav id="nav-topbar" class="nav-container group">
+					<div class="nav-wrap container">
+							{{ partial "menu.html" . }}
+					</div>
+				</nav>
+				<!--顶部背景图 -->
+				{{ partial "title.html" . }}
+			</header>
+			<!--内容区 -->
+			<div id="page" class="container">
+				<div class="container-inner">
+					<div class="main">
+						<div class="main-inner group">
+						
+							<!--中间内容-->
+							{{ partial "content.html" . }}
+							<!--左侧-->
+							{{ partial "left.html" . }}
+							<!--右侧-->
+							<div class="sidebar s2">
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<!--底部-->
+			 {{ partial "footer.html" . }}
+		</div>
+	</body>
+
+</html>
